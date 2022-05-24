@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="500.0" minWidth="800.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.QuestionsController">
+   <children>
+       <VBox fx:id="page1" minHeight="500.0" minWidth="800.0" spacing="10.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+           <children>
+               <Label text="Que1: Which one among these is not a primitive datatype?">
+                   <padding>
+                       <Insets bottom="20.0" />
+                   </padding>
+               </Label>
+               <RadioButton fx:id="RbtInt" mnemonicParsing="false" text="int">
+                   <toggleGroup>
+                       <ToggleGroup fx:id="Question1" />
+                   </toggleGroup>
+               </RadioButton>
+               <RadioButton fx:id="RbtFloat" mnemonicParsing="false" text="float" toggleGroup="$Question1" />
+               <RadioButton fx:id="RbtBoolean" mnemonicParsing="false" text="boolean" toggleGroup="$Question1" />
+               <RadioButton fx:id="RbtChar" mnemonicParsing="false" text="char" toggleGroup="$Question1" />
+               <HBox prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+                   <children>
+                       <Button fx:id="btnNextQuestion2" mnemonicParsing="false" text="Next" />
+                       <Button fx:id="btnQuestion1Bookmark" mnemonicParsing="false" text="Bookmark" />
+                   </children>
+                   <padding>
+                       <Insets left="10.0" top="30.0" />
+                   </padding>
+               </HBox>
+           </children>
+           <padding>
+               <Insets left="30.0" top="20.0" />
+           </padding>
+       </VBox>
+       <VBox fx:id="page2" minHeight="500.0" minWidth="800.0" spacing="10.0" visible="false" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+           <children>
+               <Label text="Que2: Which class is available to all the class automatically?">
+                   <padding>
+                       <Insets bottom="20.0" />
+                   </padding>
+               </Label>
+               <RadioButton fx:id="Rbtswing" mnemonicParsing="false" text="Swing">
+                   <toggleGroup>
+                       <ToggleGroup fx:id="Question2" />
+                   </toggleGroup>
+               </RadioButton>
+               <RadioButton fx:id="Rbtapplet" mnemonicParsing="false" text="Applet" toggleGroup="$Question2" />
+               <RadioButton fx:id="RbtObject" mnemonicParsing="false" text="Object" toggleGroup="$Question2" />
+               <RadioButton fx:id="RbtActionEvent" mnemonicParsing="false" text="ActionEvent" toggleGroup="$Question2" />
+               <HBox prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+                   <children>
+                       <Button fx:id="btnNextQuestion3" mnemonicParsing="false" text="Next" />
+                       <Button fx:id="btnQuestion2Bookmark" mnemonicParsing="false" text="Bookmark" />
+                   </children>
+                   <padding>
+                       <Insets left="10.0" top="30.0" />
+                   </padding>
+               </HBox>
+           </children>
+           <padding>
+               <Insets left="30.0" top="20.0" />
+           </padding>
+       </VBox>
+       <VBox fx:id="page3" minHeight="500.0" minWidth="800.0" spacing="10.0" visible="false" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+           <children>
+               <Label text="Que3: Which package is directly available to our class without importing it?">
+                   <padding>
+                       <Insets bottom="20.0" />
+                   </padding>
+               </Label>
+               <RadioButton fx:id="RbtSwing" mnemonicParsing="false" text="swing">
+                   <toggleGroup>
+                       <ToggleGroup fx:id="Question3" />
+                   </toggleGroup>
+               </RadioButton>
+               <RadioButton fx:id="RbtApplet" mnemonicParsing="false" text="applet" toggleGroup="$Question3" />
+               <RadioButton fx:id="RbtNet" mnemonicParsing="false" text="net" toggleGroup="$Question3" />
+               <RadioButton fx:id="RbtLang" mnemonicParsing="false" text="lang" toggleGroup="$Question3" />
+               <HBox prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+                   <children>
+                       <Button fx:id="btnNextQuestion4" mnemonicParsing="false" text="Next" />
+                       <Button fx:id="btnQuestion3Bookmark" mnemonicParsing="false" text="Bookmark" />
+                   </children>
+                   <padding>
+                       <Insets left="10.0" top="30.0" />
+                   </padding>
+               </HBox>
+           </children>
+           <padding>
+               <Insets left="30.0" top="20.0" />
+           </padding>
+       </VBox>
+       <VBox fx:id="page4" minHeight="500.0" minWidth="800.0" spacing="10.0" visible="false" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+           <children>
+               <Label text="Que4: String class is defined in which package?">
+                   <padding>
+                       <Insets bottom="20.0" />
+                   </padding>
+               </Label>
+               <RadioButton fx:id="Rbtlang" mnemonicParsing="false" text="lang">
+                   <toggleGroup>
+                       <ToggleGroup fx:id="Question4" />
+                   </toggleGroup>
+               </RadioButton>
+               <RadioButton fx:id="RBtSwing" mnemonicParsing="false" text="swing" toggleGroup="$Question4" />
+               <RadioButton fx:id="RBtApplet" mnemonicParsing="false" text="applet" toggleGroup="$Question4" />
+               <RadioButton fx:id="RbtAwt" mnemonicParsing="false" text="awt" toggleGroup="$Question4" />
+               <HBox prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+                   <children>
+                       <Button fx:id="btnNextQuestion5" mnemonicParsing="false" text="Next" />
+                       <Button fx:id="btnQuestion4Bookmark" mnemonicParsing="false" text="Bookmark" />
+                   </children>
+                   <padding>
+                       <Insets left="10.0" top="30.0" />
+                   </padding>
+               </HBox>
+           </children>
+           <padding>
+               <Insets left="30.0" top="20.0" />
+           </padding>
+       </VBox>
+       <VBox fx:id="page5" minHeight="500.0" minWidth="800.0" spacing="10.0" visible="false" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+           <children>
+               <Label text="Que5: Which institute is best for java coaching?">
+                   <padding>
+                       <Insets bottom="20.0" />
+                   </padding>
+               </Label>
+               <RadioButton fx:id="RbtUtek" mnemonicParsing="false" text="Utek">
+                   <toggleGroup>
+                       <ToggleGroup fx:id="Question5" />
+                   </toggleGroup>
+               </RadioButton>
+               <RadioButton fx:id="RbtAptech" mnemonicParsing="false" text="Aptech" toggleGroup="$Question5" />
+               <RadioButton fx:id="RbtSSSIT" mnemonicParsing="false" text="SSS IT" toggleGroup="$Question5" />
+               <RadioButton fx:id="RbtJTek" mnemonicParsing="false" text="JTek" toggleGroup="$Question5" />
+               <HBox prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+                   <children>
+                       <Button fx:id="btnNextQuestion6" mnemonicParsing="false" text="Next" />
+                       <Button fx:id="btnQuestion5Bookmark" mnemonicParsing="false" text="Bookmark" />
+                   </children>
+                   <padding>
+                       <Insets left="10.0" top="30.0" />
+                   </padding>
+               </HBox>
+           </children>
+           <padding>
+               <Insets left="30.0" top="20.0" />
+           </padding>
+       </VBox>
+       <VBox fx:id="page6" minHeight="500.0" minWidth="800.0" spacing="10.0" visible="false" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+           <children>
+               <Label text="Que6: Which one among these is not a keyword?">
+                   <padding>
+                       <Insets bottom="20.0" />
+                   </padding>
+               </Label>
+               <RadioButton fx:id="RbtClass" mnemonicParsing="false" text="class">
+                   <toggleGroup>
+                       <ToggleGroup fx:id="Question6" />
+                   </toggleGroup>
+               </RadioButton>
+               <RadioButton fx:id="RbBtInt" mnemonicParsing="false" text="int" toggleGroup="$Question6" />
+               <RadioButton fx:id="RbtGet" mnemonicParsing="false" text="get" toggleGroup="$Question6" />
+               <RadioButton fx:id="RbtIf" mnemonicParsing="false" text="if" toggleGroup="$Question6" />
+               <HBox prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+                   <children>
+                       <Button fx:id="btnNextQuestion7" mnemonicParsing="false" text="Next" />
+                       <Button fx:id="btnQuestion6Bookmark" mnemonicParsing="false" text="Bookmark" />
+                   </children>
+                   <padding>
+                       <Insets left="10.0" top="30.0" />
+                   </padding>
+               </HBox>
+           </children>
+           <padding>
+               <Insets left="30.0" top="20.0" />
+           </padding>
+       </VBox>
+       <VBox fx:id="page7" minHeight="500.0" minWidth="800.0" spacing="10.0" visible="false" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+           <children>
+               <Label text="Que7: Which one among these is not a class?">
+                   <padding>
+                       <Insets bottom="20.0" />
+                   </padding>
+               </Label>
+               <RadioButton fx:id="RBtswing" mnemonicParsing="false" text="Swing">
+                   <toggleGroup>
+                       <ToggleGroup fx:id="Question7" />
+                   </toggleGroup>
+               </RadioButton>
+               <RadioButton fx:id="RbtActionperformed" mnemonicParsing="false" text="Actionperformed" toggleGroup="$Question7" />
+               <RadioButton fx:id="RBtActionEvent" mnemonicParsing="false" text="ActionEvent" toggleGroup="$Question7" />
+               <RadioButton fx:id="RbtButton" mnemonicParsing="false" text="Button" toggleGroup="$Question7" />
+               <HBox prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+                   <children>
+                       <Button fx:id="btnNextQuestion8" mnemonicParsing="false" text="Next" />
+                       <Button fx:id="btnQuestion7Bookmark" mnemonicParsing="false" text="Bookmark" />
+                   </children>
+                   <padding>
+                       <Insets left="10.0" top="30.0" />
+                   </padding>
+               </HBox>
+           </children>
+           <padding>
+               <Insets left="30.0" top="20.0" />
+           </padding>
+       </VBox>
+       <VBox fx:id="page8" minHeight="500.0" minWidth="800.0" spacing="10.0" visible="false" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+           <children>
+               <Label text="Que8: which one among these is not a function of Object class?">
+                   <padding>
+                       <Insets bottom="20.0" />
+                   </padding>
+               </Label>
+               <RadioButton fx:id="RbtToString" mnemonicParsing="false" text="toString">
+                   <toggleGroup>
+                       <ToggleGroup fx:id="Question8" />
+                   </toggleGroup>
+               </RadioButton>
+               <RadioButton fx:id="RbtFinalize" mnemonicParsing="false" text="finalize" toggleGroup="$Question8" />
+               <RadioButton fx:id="RbtEquals" mnemonicParsing="false" text="equals" toggleGroup="$Question8" />
+               <RadioButton fx:id="RbtGetDocumentBase" mnemonicParsing="false" text="getDocumentBase" toggleGroup="$Question8" />
+               <HBox prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+                   <children>
+                       <Button fx:id="btnNextQuestion9" mnemonicParsing="false" text="Next" />
+                       <Button fx:id="btnQuestion8Bookmark" mnemonicParsing="false" text="Bookmark" />
+                   </children>
+                   <padding>
+                       <Insets left="10.0" top="30.0" />
+                   </padding>
+               </HBox>
+           </children>
+           <padding>
+               <Insets left="30.0" top="20.0" />
+           </padding>
+       </VBox>
+       <VBox fx:id="page9" minHeight="500.0" minWidth="800.0" spacing="10.0" visible="false" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+           <children>
+               <Label text="Que9: which function is not present in Applet class?">
+                   <padding>
+                       <Insets bottom="20.0" />
+                   </padding>
+               </Label>
+               <RadioButton fx:id="RbtInit" mnemonicParsing="false" text="init">
+                   <toggleGroup>
+                       <ToggleGroup fx:id="Question9" />
+                   </toggleGroup>
+               </RadioButton>
+               <RadioButton fx:id="RbtMain" mnemonicParsing="false" text="main" toggleGroup="$Question9" />
+               <RadioButton fx:id="RbtStart" mnemonicParsing="false" text="start" toggleGroup="$Question9" />
+               <RadioButton fx:id="RbtDestroy" mnemonicParsing="false" text="destroy" toggleGroup="$Question9" />
+               <HBox prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+                   <children>
+                       <Button fx:id="btnNextQuestion10" mnemonicParsing="false" text="Next" />
+                       <Button fx:id="btnQuestion9Bookmark" mnemonicParsing="false" text="Bookmark" />
+                   </children>
+                   <padding>
+                       <Insets left="10.0" top="30.0" />
+                   </padding>
+               </HBox>
+           </children>
+           <padding>
+               <Insets left="30.0" top="20.0" />
+           </padding>
+       </VBox>
+       <VBox fx:id="page10" minHeight="500.0" minWidth="800.0" spacing="10.0" visible="false" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+           <children>
+               <Label text="Que10: Which one among these is not a valid component?">
+                   <padding>
+                       <Insets bottom="20.0" />
+                   </padding>
+               </Label>
+               <RadioButton fx:id="RbtJButton" mnemonicParsing="false" text="JButton">
+                   <toggleGroup>
+                       <ToggleGroup fx:id="Question10" />
+                   </toggleGroup>
+               </RadioButton>
+               <RadioButton fx:id="RbtJList" mnemonicParsing="false" text="JList" toggleGroup="$Question1" />
+               <RadioButton fx:id="RbtJButtonGroup" mnemonicParsing="false" text="JButtonGroup" toggleGroup="$Question1" />
+               <RadioButton fx:id="RbtJTextArea" mnemonicParsing="false" text="JTextArea" toggleGroup="$Question1" />
+               <HBox prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+                   <children>
+                       <Button fx:id="btnNextQuestion" mnemonicParsing="false" text="Next" />
+                       <Button fx:id="BtnResult" mnemonicParsing="false" text="Result" />
+                   </children>
+                   <padding>
+                       <Insets left="10.0" top="30.0" />
+                   </padding>
+               </HBox>
+           </children>
+           <padding>
+               <Insets left="30.0" top="20.0" />
+           </padding>
+       </VBox>
+   </children>
+</StackPane>
